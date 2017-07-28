@@ -29,3 +29,9 @@ rancher --wait stack create ambry --start -f ambry/docker-compose.yml
 rancher rm ambry-mock
 rancher --wait stack create ambry-frontend --start -f ambry-frontend/docker-compose.yml
 ```
+
+Bonus:
+create a service in rancher with image `sandinh/helix` then `docker exec -it <id> sh` to it to run helix commands, ex:
+```bash
+helix-admin.sh --zkSvr zoo1.zk:2181,zoo2.zk:2181,zoo3.zk:2181 --dropCluster Ambry_Ohze
+```
