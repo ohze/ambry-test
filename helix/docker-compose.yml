@@ -1,0 +1,9 @@
+version: '2'
+services:
+  controller:
+    image: sandinh/helix
+    restart: unless-stopped
+    command: ["run-helix-controller.sh",
+      "--zkSvr", "zoo1.zk:2181,zoo2.zk:2181,zoo3.zk:2181",
+      "--cluster", "Ambry_Ohze"
+    ]

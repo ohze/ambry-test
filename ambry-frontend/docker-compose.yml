@@ -1,0 +1,26 @@
+version: '2'
+services:
+  f1:
+    image: sandinh/ambry-test
+    restart: unless-stopped
+#    ports:
+#      - 1174:1174
+    command: [
+      "com.github.ambry.frontend.AmbryFrontendMain",
+      "--serverPropsFilePath", "/opt/ambry/config/f1.properties",
+      "--hardwareLayoutFilePath", "/opt/ambry/config/HardwareLayout.json",
+      "--partitionLayoutFilePath", "/opt/ambry/config/PartitionLayout.json"
+    ]
+    labels:
+      io.rancher.scheduler.affinity:host_label: ambry.id=1
+  f2:
+    image: sandinh/ambry-test
+    restart: unless-stopped
+    command: [
+      "com.github.ambry.frontend.AmbryFrontendMain",
+      "--serverPropsFilePath", "/opt/ambry/config/f2.properties",
+      "--hardwareLayoutFilePath", "/opt/ambry/config/HardwareLayout.json",
+      "--partitionLayoutFilePath", "/opt/ambry/config/PartitionLayout.json"
+    ]
+    labels:
+      io.rancher.scheduler.affinity:host_label: ambry.id=2

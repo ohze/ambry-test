@@ -1,0 +1,35 @@
+{
+    "clusterName": "Ohze",
+    "version": 1,
+    "datacenters": [
+        {
+            "dataNodes": [
+                {
+                    "disks": [
+                        {
+                            "capacityInBytes": 3221225472,
+                            "hardwareState": "AVAILABLE",
+                            "mountPath": "/opt/ambry/data"
+                        }
+                    ],
+                    "hardwareState": "AVAILABLE",
+                    "hostname": "s1.ambry",
+                    "port": 6667
+                },
+                {
+                    "disks": [
+                        {
+                            "capacityInBytes": 3221225472,
+                            "hardwareState": "AVAILABLE",
+                            "mountPath": "/opt/ambry/data"
+                        }
+                    ],
+                    "hardwareState": "AVAILABLE",
+                    "hostname": "s2.ambry",
+                    "port": 6667
+                }
+            ],
+            "name": "dc1"
+        }
+    ]
+}

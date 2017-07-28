@@ -1,0 +1,57 @@
+{
+  "clusterName": "Ohze",
+  "version": 1,
+  "partitions": [
+    {
+      "id": 1,
+      "partitionState": "READ_WRITE",
+      "replicaCapacityInBytes": 1073741824,
+      "replicas": [
+        {
+          "hostname": "s1.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        },
+        {
+          "hostname": "s2.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "partitionState": "READ_WRITE",
+      "replicaCapacityInBytes": 1073741824,
+      "replicas": [
+        {
+          "hostname": "s1.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        },
+        {
+          "hostname": "s2.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "partitionState": "READ_WRITE",
+      "replicaCapacityInBytes": 1073741824,
+      "replicas": [
+        {
+          "hostname": "s1.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        },
+        {
+          "hostname": "s2.ambry",
+          "mountPath": "/opt/ambry/data",
+          "port": 6667
+        }
+      ]
+    }
+  ]
+}

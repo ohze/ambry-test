@@ -1,0 +1,8 @@
+{
+  "zkInfo" : [
+     {
+       "datacenter":"dc1",
+       "zkConnectStr":"zoo1.zk:2181,zoo2.zk:2181,zoo3.zk:2181"
+     }
+  ]
+}

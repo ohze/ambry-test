@@ -1,0 +1,13 @@
+# This is only used to bootstrap ambry-bootstrap-upgrade stack
+version: '2'
+services:
+  s1:
+    image: sandinh/ambry-test
+    command: ["/bin/false"]
+    labels:
+      io.rancher.container.start_once: 'true'
+  s2:
+    image: sandinh/ambry-test
+    command: ["/bin/false"]
+    labels:
+      io.rancher.container.start_once: 'true'
